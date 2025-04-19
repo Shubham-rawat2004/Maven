@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+<!--    reverse of domain name -->
+    <groupId>com.child2</groupId>
+<!--    project  name -->
+    <artifactId>MavenPrac</artifactId>
+<!--    version snapshot signifies project is under development -->
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <modules>
+        <module>Chid1</module>
+        <module>Chid1/Child2</module>
+    </modules>
+    <dependencies>
+        <dependency>
+            <groupId>com.github.luben</groupId>
+            <artifactId>zstd-jni</artifactId>
+            <version>1.5.6-3</version>
+        </dependency>
+    </dependencies>
+    <repositories>
+<!--        adding external repo-->
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack:io</url>
+            </repository>
+
+        <repository>
+            <id>my-repo</id>
+            <name>Maven Central</name>
+            <url>https://repo1.maven.org/maven2/</url>
+        </repository>
+
+    </repositories>
+<!--  <build>-->
+<!--      <plugins>-->
+<!--          <plugin>-->
+<!--              <groupId>org.apache.maven.plugins</groupId>-->
+<!--              <artifactId>maven-gpg-plugin</artifactId>-->
+<!--              <version>3.2.7</version>-->
+<!--              <executions>-->
+<!--                  <execution>-->
+<!--                      <id>rawat</id>-->
+<!--                      <phase>verify</phase>-->
+<!--                      <goals>-->
+<!--                          <goal>sign</goal>-->
+<!--                      </goals>-->
+<!--                  </execution>-->
+<!--              </executions>-->
+<!--          </plugin>-->
+<!--      </plugins>-->
+<!--  </build>-->
+<!--    validate	  Checks if project configuration is correct-->
+<!--    compile	     Compiles the source code-->
+<!--    test	     Runs unit tests-->
+<!--    package	    Creates a JAR/WAR file-->
+<!--    install	    Installs the package in the local repository-->
+<!--    deploy  	Uploads the package to a remote repository-->
+
+    <properties>
+        <maven.compiler.source>23</maven.compiler.source>
+        <maven.compiler.target>23</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+</project>
